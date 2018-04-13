@@ -455,6 +455,7 @@ footer {
 
     p {
         color: $text;
+        font-size: 1.1em;
         margin: 0;
     }
 }
@@ -588,13 +589,15 @@ footer {
 }
 
 .education-block {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
+    max-width: 1000px;
+    margin: 20px auto 30px auto;
     padding: 15px;
     border: 1px solid $border;
     text-align: left;
+    background: #fff;
 
     h3 {
+        font-size: 1.5em;
         font-weight: 500;
         float: left;
         margin: 0;
@@ -616,11 +619,15 @@ footer {
     p, ul {
         margin: 0;
         color: $text;
-        font-size: 0.9em;
+        font-size: 1.05em;
+    }
+
+    li {
+        padding: 0 0 5px 0;
     }
 
     ul {
-        padding: 0 0 0 15px;
+        padding: 0 0 0 35px;
     }
 }
 
@@ -643,7 +650,7 @@ footer {
 
 .project {
     position: relative;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
@@ -651,21 +658,39 @@ footer {
 }
 
 .project-image {
+
     float: left;
 }
 
 .project-info {
-    position: absolute;
+    position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    
     margin-left: 300px;
     padding: 15px;
+
 
     h3 {
         font-size: 1.5em;
         font-weight: 300;
         color: $heading;
         margin: 0 0 15px 0;
+    }
+
+    p, ul {
+        text-align: left;
+        margin: 0;
+        color: $text;
+        font-size: 1.05em;
+    }
+
+    li {
+        text-align: left;
+        padding: 0 0 5px 0;
+    }
+
+    ul {
+        padding: 0 0 0 35px;
     }
 
     p {
@@ -998,4 +1023,116 @@ footer {
         }
     }
 
+}
+
+
+/*
+    --------------------------------
+    ----- 13. Extracurricular Styles -----
+    --------------------------------
+*/
+
+#extracurricular {
+    padding: 50px 15px;
+    text-align: center;
+    border-bottom: 1px solid $border;
+
+    h2 {
+        color: $heading;
+    }
+}
+
+#extracurricular-timeline {
+    margin: 30px auto 0 auto;
+    position: relative;
+    max-width: 1080px;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 303px;
+        right: auto;
+        height: 100%;
+        width: 3px;
+        background: $base-color;
+        z-index: 0;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 40px;
+        background: $base-color;
+        background: linear-gradient(to bottom, $base-color, rgba($base-color, 0));
+        top: 100%;
+        left: 303px;
+    }
+}
+
+.vtimeline-content {
+    margin-left: 350px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: left;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        display: inline-block;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: #7e8890;
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        color: $text;
+        font-size: 0.9em;
+        margin: 0;
+    }
+}
+
+.vtimeline-point {
+    position: relative;
+    display: block;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.vtimeline-icon {
+    position: relative;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: $base-color;
+    border-radius: 50%;
+    float: left;
+    z-index: 99;
+    margin-left: 280px;
+
+    i {
+        display: block;
+        font-size: 2em;
+        margin-top: 10px;
+    }
+}
+
+.vtimeline-date {
+    width: 260px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-weight: 300;
+    color: #374054;
 }
