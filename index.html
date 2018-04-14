@@ -419,11 +419,11 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/HSR.png" height="450" width="300" />
+                        <img src="images/HSR.png" height="432" width="300" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Motion Planning System Integration with Toyota HSR Robot</h3>
+                        <h3>Motion Planning System Integration with the Toyota HSR Robot</h3>
                         <span class="education-date">November 2017 - Present</span>
                         <h4>Advisor: Brian C. Williams, <i>Model-based Embedded and Robotic Systems Group, MIT</i></h4>
                         
@@ -431,16 +431,16 @@
                             Goal: To develop the software interface for the Toyota HSR robot so that the Chekov motion planning system our team developed can be applied
                         </p>
                         <li>
-                            Redefined the kinematic chain for HSR manipulator
+                            Generated HSR OpenRAVE model and redefined the kinematic chain by adding the base rotational joint as a DOF to the manipulator, in order to apply 6D analytical inverse kinematics calculations
                         </li>
                         <li>
-                            Evaluated 
+                            Developed the ROS-OpenRAVE interface for HSR in order to synchronize the planning system (in OpenRAVE) and the execution system (in ROS)
                         </li>
                         <li>
-                            Compared 
+                            Integrated our "pick and place" plan dispatching system with the Toyota HSR "mock-hardware" control and simulation system 
                         </li>
                         <li>
-                            Combined 
+                            Investigated the TrajOpt collision cost issue when the robot is grasping objects and modified the TrajOpt algorithm to disable collision for grasping fingers
                         </li>
                         
                         <!-- <a href="libs/IROS_2018.pdf" download="IROS_2018.pdf">View Submission</a> -->
@@ -508,7 +508,7 @@
                             Analyzed the influence of platform heave frequency, frequency and amplitude of vortex-induced forces, vertical acceleration and vertical velocity of TDP and SCR top tension on the numerical reconstruction results
                         </li>
                         
-                        <a href="#">View Thesis</a>
+                        <a href="libs/bachelor_thesis.pdf" download="bachelor_thesis.pdf">View Thesis</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
