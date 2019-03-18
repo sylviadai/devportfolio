@@ -51,7 +51,7 @@
     });
 
     // Create timeline
-    $('#experience-timeline').each(function() {
+    $('#education-timeline').each(function() {
 
         $this = $(this); // Store reference to this
         $userContent = $this.children('div'); // user content
@@ -77,7 +77,7 @@
     });
 
     // Create timeline
-    $('#education-timeline').each(function() {
+    $('#experience-timeline').each(function() {
 
         $this = $(this); // Store reference to this
         $userContent = $this.children('div'); // user content
