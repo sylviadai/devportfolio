@@ -86,7 +86,7 @@
                 <div class="col-md-8">
 
                     <p>
-                        Sylvia is a PhD candidate in MIT Mechanical Engineering department. She works in MIT Computer Science and Artificial Intelligence Laboratory (CSAIL). Her Masters research focused on chance-constrained motion planning of robotic manipulation. This research drew techniques from a variety of fields, including trajectory optimization, sampling-based motion planning, probabilistic motion planning and optimal control. In her PhD research, more effort has been devoted to encouraging robots to learn manipulation skills through intrinsic exploration and transfer learned skills to new complex tasks. Sylvia likes robotics, and she has gained lots of experience in robotic system integrations after working on many different robots, including Baxter from Rethink Robotics, WAM from Barrett, and HSR from Toyota.
+                        Sylvia is a PhD candidate in MIT Mechanical Engineering department. She works in MIT Computer Science and Artificial Intelligence Laboratory (CSAIL). Her Masters research focused on chance-constrained motion planning of robotic manipulation. This research drew techniques from a variety of fields, including trajectory optimization, sampling-based motion planning, probabilistic motion planning and optimal control. In her PhD research, more effort has been devoted to training reinforcement learning agents to learn manipulation skills through intrinsic explorationn with only sparse extrinsic tasks rewards and to transfer learned skills to new complex tasks. Sylvia likes robotics, and she has gained lots of experience in robotic system integrations after working on many different robots, including Baxter from Rethink Robotics, WAM from Barrett, and HSR from Toyota.
                     </p>
                 </div>
             </div>
@@ -114,10 +114,10 @@
                     Teaching Assistant for <i>Dynamics and Control I</i>, <i>Physics II</i>, <i>Seminar in Undergraduate Research</i>
                 </li>
                 <li>
-                    Interests: Robot Manipulation Planning, Reinforcement Learning, Optimization
+                    Interests: Robot Manipulation, Reinforcement Learning, Optimization, Motion Planning
                 </li>
                 <li>
-                    Tentative PhD Thesis Title: Reinforcement Learning for Sparse Reward Tasks
+                    Tentative PhD Thesis Title: Reinforcement Learning for Robotic Manipulation Tasks with Sparse Rewards
                 </li>
             </ul>
             </div>
@@ -247,12 +247,21 @@
     <div id="experience">
         <h2 class="heading">Experience</h2>
         <div id="work-timeline">
-            <div data-date="May – August 2019">
-                <h3>General AI Lab, Horizon Robotics</h3>
-                <h4>Research Scientist Intern</h4>
+        	<div data-date="May – August 2020">
+                <h3>Mitsubishi Electric Research Laboratories</h3>
+                <h4>Research Intern</h4>
                 <ul>
                 <li>
-                    Applied mutual information maximization approaches to encourage robotic manipulators to learn skills through intrinsic motivation in reinforcement learning.
+                    Developed a hierarchical motion planning approach that provides real-time motion plans for autonomous valet parking systems with incomplete map information.
+                </li>
+            </ul>
+            </div>
+            <div data-date="May – August 2019">
+                <h3>General AI Lab, Horizon Robotics</h3>
+                <h4>Research Intern</h4>
+                <ul>
+                <li>
+                    Proposed an empowerment-driven intrinsic exploration approach that allows reinforcement learning agents to learn manipulation skills with only sparse extrinsic rewards from the environment.
                 </li>
             </ul>
             </div>
@@ -271,8 +280,14 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
             </p> -->
             <ul>
+            	<li>
+                <b>Siyu Dai</b>, and Yebin Wang. "Long-Horizon Motion Planning for Autonomous Vehicle Parking Incorporating Incomplete Map Information," <i>2021 International Conference on Robotics and Automation (IRCA).</i> Under Review. <a href="libs/ICRA21b_BIAGT_for_incomplete_map.pdf" download="ICRA_2021.pdf">(View)</a>
+                </li>
                 <li>
-                <b>Siyu Dai</b>, Andreas Hofmann, and Brian Williams. "Fast-Reactive Probabilistic Motion Planning for High-Dimensional Robots," <i>The International Journal of Robotics Research (IJRR).</i> Under Review. <a href="libs/IJRR_submission_with_reference.pdf" download="IJRR_submission.pdf">(View)</a>
+                <b>Siyu Dai</b>, Wei Xu, Andreas Hofmann, and Brian Williams. "An Empowerment-based Solution to Robotic Manipulation Tasks with Sparse Rewards," <i>2020 Conference on Robot Learning (CoRL).</i> Under Review. <a href="libs/CoRL_submission.pdf" download="CoRL_submission.pdf">(View)</a>
+                </li>
+                <li>
+                <b>Siyu Dai</b>, Andreas Hofmann, and Brian Williams. "Fast-Reactive Probabilistic Motion Planning for High-Dimensional Robots," <i>The International Journal of Robotics Research (IJRR).</i> Under Second Round Review. <a href="libs/IJRR_revision.pdf" download="IJRR_revision.pdf">(View)</a>
                 </li>
             	<li>
                     <b>Siyu Dai</b>, Shawn Schaffert, Ashkan Jasour, Andreas Hofmann, and Brian Williams. “Chance Constrained Motion Planning for High-Dimensional Robots,” <i>2019 International Conference on Robotics and Automation (ICRA).</i> <a href="libs/ICRA19_0156_MS.pdf" download="ICRA19_0156_MS.pdf">(View)</a>
@@ -437,26 +452,30 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/pr2.jpg" height="360" width="300" />
+                        <img src="images/pr2.jpg" height="460" width="300" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Reinforcement Learning for Sparse Reward Tasks</h3>
+                        <h3>Reinforcement Learning for Robotic Manipulation Tasks with Sparse Rewards</h3>
                         <span class="education-date">September 2019 - Present</span>
-                        <h4>Advisor: Brian C. Williams, <i>Model-based Embedded and Robotic Systems Group, MIT</i></h4>
+                        <h4>Advisor: Brian C. Williams, <i>Computer Science and Artificial Intelligence Laboratory, MIT</i></h4>
                         
                         <p>
-                            Goal: To encourage robots to learn basic manipulation skills through intrinsic exploration, and then transfer the skills to more complex tasks in new environments
+                            Goal: To develop a reinforcement learning approach that encourages robots to learn basic manipulation skills through intrinsic exploration, and then transfer the skills to more complex tasks in new environments
                         </p>
                         <li>
-                            Implemented 3 different intrinsic exploration approaches and evaluated their performance in two different manipulation environments
+                            Implemented 3 different intrinsic exploration approaches and evaluated their performance on object-lifting and pick-and place tasks in two different manipulation environments
                         </li>
                         <li>
-                            Compared the performance of 3 different mutual information estimation approaches in terms of encouraging intrinsic exploration through maximizing mutual information between actions and states
+                            Developed an empowerment-based intrinsic motivation that maximizes the conditional mutual information (MI) between actions and states and compared he performance of 3 different MI estimation approaches
                         </li>
                         <li>
-                            Proposed a hierarchical framework for skill learning and transferring
+                            Combined the empowerment-based intrinsic motivation with diversity-driven rewards and enabled the robotic manipulator to learn a diverse set of skills
                         </li>
+                        <li>
+                        	Proposed a learning from demonstration framework that combines intrinsic exploration with inverse reinforcement learning to accomplish long-horizon compound tasks
+                        </li>
+                        <a href="libs/CoRL_submission.pdf" download="CoRL_submission.pdf">View Submission</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -470,7 +489,7 @@
                     <div class="project-info">
                         <h3>Improving Chance-Constrained Motion Planning using Machine Learning Methods</h3>
                         <span class="education-date">February - August 2019</span>
-                        <h4>Advisor: Brian C. Williams, <i>Model-based Embedded and Robotic Systems Group, MIT</i></h4>
+                        <h4>Advisor: Brian C. Williams, <i>Computer Science and Artificial Intelligence Laboratory, MIT</i></h4>
                         
                         <p>
                             Goal: To develop an offline learning scheme that can provide faster online reaction time and more accurate collision risk estimation for chance-constrained manipulator motion planning
@@ -481,7 +500,7 @@
                         <li>
                             Demonstrated a significant improvement on planning speed using neural networks in 1000 randomly sampled simulation test cases
                         </li>
-                        <a href="libs/IJRR_submission_with_reference.pdf" download="IJRR_submission.pdf">View Submission</a>
+                        <a href="libs/IJRR_revision.pdf" download="IJRR_revision.pdf">View Submission</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -494,7 +513,7 @@
                     <div class="project-info">
                         <h3>Fast-reactive Risk-aware Robotic Motion Planning and Execution System Design</h3>
                         <span class="education-date">October 2017 - January 2019</span>
-                        <h4>Advisor: Brian C. Williams, <i>Model-based Embedded and Robotic Systems Group, MIT</i></h4>
+                        <h4>Advisor: Brian C. Williams, <i>Computer Science and Artificial Intelligence Laboratory, MIT</i></h4>
                         
                         <p>
                             Goal: To develop a risk-aware robotic motion planning system that accounts for system process noises and observation noises, and can quickly provide safe plans for robots with complicated dynamics but work under uncertainty, for instance underwater vehicles and human support robots
@@ -529,7 +548,7 @@
                     <div class="project-info">
                         <h3>Motion Planning System Integration with the Toyota HSR Robot</h3>
                         <span class="education-date">November 2017 - Present</span>
-                        <h4>Advisor: Brian C. Williams, <i>Model-based Embedded and Robotic Systems Group, MIT</i></h4>
+                        <h4>Advisor: Brian C. Williams, <i>Computer Science and Artificial Intelligence Laboratory, MIT</i></h4>
                         
                         <p>
                             Goal: To develop the software interface for the Toyota HSR robot so that the Chekov motion planning system our team developed can be applied
@@ -561,7 +580,7 @@
                     <div class="project-info">
                         <h3>Trajectory Optimization in Robot Manipulation Motion Planning</h3>
                         <span class="education-date">September 2016 - September 2017</span>
-                        <h4>Advisor: Brian C. Williams, <i>Model-based Embedded and Robotic Systems Group, MIT</i></h4>
+                        <h4>Advisor: Brian C. Williams, <i>Computer Science and Artificial Intelligence Laboratory, MIT</i></h4>
                         
                         <p>
                             Goal: To analyze the strengths and weaknesses of the TrajOpt algorithm in robot motion planning, and to improve its performance by providing initial trajectories through sparse roadmaps
@@ -767,7 +786,7 @@
     <div id="leadership">
         <h2 class="heading">Leadership and Extracurricular Experience</h2>
         <div id="extracurricular-timeline">
-            <div data-date="May 2019 - Present">
+            <div data-date="May 2019 - May 2020">
                 <h3>Graduate Student Council Academic, Research and Career Committee, MIT</h3>
                 <h4>Co-Chair</h4>
                 <ul>
@@ -927,7 +946,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2019 Siyu Dai
+                        Copyright &copy; 2020 Siyu Dai
                     </p>
                 </div>
                 <div class="col-sm-2 top">
